@@ -5,6 +5,34 @@ body {
 
 }
 
+nav {
+  background-color: #333;
+  overflow: hidden;
+  color: white;
+  text-align: left;
+
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: inline-start;
+}
+
+nav li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
 
 a:link {
   color: #ffaa00;
@@ -51,9 +79,33 @@ hr {
   color: #ffffff;
   text-align: center;
 
-  padding: 25vh 5vw 33vh 5vw;
+  padding: 33vh 5vw 33vh 5vw;
   font-size: clamp(15px, 1vw, 30px);
 }
+
+
+@media(min-width:1024px){
+  .title_section {
+
+    height: 100vh;
+
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    text-transform: uppercase;
+    position: relative;
+  
+  
+    color: #ffffff;
+    text-align: center;
+  
+    padding: 23vh 5vw 33vh 5vw;
+    font-size: clamp(15px, 1vw, 30px);
+  }
+  
+}
+
 
 .title_section h1 {
   font-weight: bold;
@@ -118,8 +170,8 @@ hr {
 
     position: relative;
   
-    width: clamp(720px, 1024px, 1024px);
-    height: clamp(405px, 576px, 576px);
+    width: clamp(720px, 80vw, 1024px);
+    height: clamp(405px, 45vw, 576px);
     
   }
   
@@ -149,8 +201,7 @@ hr {
 
 .window img {
   margin: auto;
-  width: calc(50% - 20px);
-  height: calc(50% - 20px);
+  width: clamp(10px, 80vw, 1024px);
   object-fit: cover;
   object-position: center;
   border: clamp(5px, 2vw, 10px) solid #AAAAAA;
