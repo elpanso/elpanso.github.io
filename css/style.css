@@ -1,0 +1,157 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+
+a:link {
+  color: #ffaa00;
+}
+
+a:visited {
+  color: #ddaa00;
+}
+
+a:hover {
+  color: #ffBBBB;
+}
+
+a:active {
+  color: #ffEEEE;
+}
+
+hr {
+  color: sienna;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.legalline hr{
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/*시작하는 헤더  section*/
+.title_section {
+  height: 100vh;
+
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  text-transform: uppercase;
+  position: relative;
+
+
+  color: #ffffff;
+  text-align: center;
+
+  padding: 25vh 5vw 33vh 5vw;
+  font-size: clamp(15px, 1vw, 30px);
+}
+
+.title_section h1 {
+  font-weight: bold;
+  position: relative;
+  font-size: clamp(15px, 8vw, 100px);
+}
+
+
+/*가장 기본 컨테이너*/
+.default_container {
+  text-align: center;
+  padding: 8vh 5vh 8vh 5vh;
+  font-size: clamp(15px, 1vw, 30px);
+}
+
+.default_container h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  font-size: clamp(15px, 7vw, 80px);
+}
+
+.default_container h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  font-size: clamp(14px, 6vw, 35px);
+}
+
+.default_container h4 {
+  font-weight: bold;
+    text-transform: uppercase;
+  position: relative;
+  font-size: clamp(13px, 5vw, 33px);
+}
+
+
+.background_black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.background_white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*유튜브용*/
+
+.embed-youtube iframe {
+
+  position: relative;
+
+  width: clamp(290px, 80vw, 1024px);
+  height: clamp(170px, 45vw, 576px);
+  
+}
+
+
+@media(min-width:1024px){
+  .embed-youtube iframe {
+
+    position: relative;
+  
+    width: clamp(720px, 1024px, 1024px);
+    height: clamp(405px, 576px, 576px);
+    
+  }
+  
+}
+
+
+.window {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px clamp(10px, 2vw, 300px) 10px clamp(10px, 2vw, 300px);
+}
+
+
+@media(min-width:1024px){
+  .window {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px clamp(10px, 10vw, 300px) 10px clamp(10px, 10vw, 300px);
+  }
+  
+}
+
+
+.window img {
+  margin: auto;
+  width: calc(50% - 20px);
+  height: calc(50% - 20px);
+  object-fit: cover;
+  object-position: center;
+  border: clamp(5px, 2vw, 10px) solid #AAAAAA;
+}
